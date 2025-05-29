@@ -1,0 +1,267 @@
+<html lang="en"><head><meta name="emotion-insertion-point" content="">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh"
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoservicio
+    </title>
+  <style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/App.css">
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  overflow-x: auto;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Home.css">
+.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #01c90b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #009107;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Principal.css">.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Registro.css">
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/historial.css">.historial-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.historial-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+}
+
+.historial-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historial-table th,
+.historial-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.historial-table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.historial-table tr:hover {
+  background-color: #f1f3f5;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Login.css">
+.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.makeStyles-title-1 {
+  flex-grow: 1;
+}
+.makeStyles-link-2 {
+  color: white;
+  margin: 16px;
+  text-decoration: none;
+}
+.makeStyles-toolbar-3 {
+  display: flex;
+  justify-content: space-between;
+}
+</style><style data-emotion="css" data-s="">.css-1umw9bq-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;fill:currentColor;font-size:1.5rem;}</style><style data-emotion="css" data-s="">.css-5f8zx5-MuiAppBar-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;box-sizing:border-box;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;position:fixed;z-index:1100;top:0;left:auto;right:0;--AppBar-background:#00008B;--AppBar-color:#fff;background-color:var(--AppBar-background);color:var(--AppBar-color);}</style><style data-emotion="css" data-s="">@media print{.css-5f8zx5-MuiAppBar-root{position:absolute;}}</style><style data-emotion="css" data-s="">.css-cu7mkj-MuiPaper-root-MuiAppBar-root{background-color:#fff;color:rgba(0, 0, 0, 0.87);-webkit-transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;box-shadow:var(--Paper-shadow);background-image:var(--Paper-overlay);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;box-sizing:border-box;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;position:fixed;z-index:1100;top:0;left:auto;right:0;--AppBar-background:#00008B;--AppBar-color:#fff;background-color:var(--AppBar-background);color:var(--AppBar-color);}</style><style data-emotion="css" data-s="">@media print{.css-cu7mkj-MuiPaper-root-MuiAppBar-root{position:absolute;}}</style><style data-emotion="css" data-s="">.css-1ygil4i-MuiToolbar-root{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:16px;padding-right:16px;min-height:56px;}</style><style data-emotion="css" data-s="">@media (min-width:600px){.css-1ygil4i-MuiToolbar-root{padding-left:24px;padding-right:24px;}}</style><style data-emotion="css" data-s="">@media (min-width:0px){@media (orientation: landscape){.css-1ygil4i-MuiToolbar-root{min-height:48px;}}}</style><style data-emotion="css" data-s="">@media (min-width:600px){.css-1ygil4i-MuiToolbar-root{min-height:64px;}}</style><style data-emotion="css" data-s="">.css-y06khk-MuiTypography-root{margin:0;font-family:Roboto,sans-serif;font-weight:500;font-size:1.25rem;line-height:1.6;}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root{text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:-12px;color:inherit;}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1tyix74-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root.MuiIconButton-loading{color:transparent;}</style><style data-emotion="css" data-s="">@media (min-width:0px){.css-1tyix74-MuiIconButton-root{display:none;}}</style><style data-emotion="css" data-s="">@media (min-width:960px){.css-1tyix74-MuiIconButton-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:-12px;color:inherit;}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.MuiIconButton-loading{color:transparent;}</style><style data-emotion="css" data-s="">@media (min-width:0px){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:none;}}</style><style data-emotion="css" data-s="">@media (min-width:960px){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><style data-emotion="css" data-s="">.css-m24e0b-MuiDrawer-root{z-index:1200;}</style><style data-emotion="css" data-s="">.css-r3djoj-MuiTouchRipple-root{overflow:hidden;pointer-events:none;position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;border-radius:inherit;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple{opacity:0;position:absolute;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple.MuiTouchRipple-rippleVisible{opacity:0.3;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-animation-name:animation-1taevns;animation-name:animation-1taevns;-webkit-animation-duration:550ms;animation-duration:550ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple.MuiTouchRipple-ripplePulsate{-webkit-animation-duration:200ms;animation-duration:200ms;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-child{opacity:1;display:block;width:100%;height:100%;border-radius:50%;background-color:currentColor;}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-childLeaving{opacity:0;-webkit-animation-name:animation-5ich1p;animation-name:animation-5ich1p;-webkit-animation-duration:550ms;animation-duration:550ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}</style><style data-emotion="css" data-s="">.css-y4cjyz-MuiTouchRipple-ripple .MuiTouchRipple-childPulsate{position:absolute;left:0px;top:0;-webkit-animation-name:animation-f6tr5a;animation-name:animation-f6tr5a;-webkit-animation-duration:2500ms;animation-duration:2500ms;-webkit-animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);animation-timing-function:cubic-bezier(0.4, 0, 0.2, 1);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-delay:200ms;animation-delay:200ms;}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-f6tr5a{0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(0.92);-moz-transform:scale(0.92);-ms-transform:scale(0.92);transform:scale(0.92);}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}</style><style data-emotion="css" data-s="">@keyframes animation-f6tr5a{0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(0.92);-moz-transform:scale(0.92);-ms-transform:scale(0.92);transform:scale(0.92);}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-5ich1p{0%{opacity:1;}100%{opacity:0;}}</style><style data-emotion="css" data-s="">@keyframes animation-5ich1p{0%{opacity:1;}100%{opacity:0;}}</style><style data-emotion="css" data-s="">@-webkit-keyframes animation-1taevns{0%{-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0.1;}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.3;}}</style><style data-emotion="css" data-s="">@keyframes animation-1taevns{0%{-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0.1;}100%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.3;}}</style><style data-emotion="css" data-s="">.css-2soe65-MuiModal-root-MuiDrawer-root{position:fixed;z-index:1300;right:0;bottom:0;top:0;left:0;z-index:1200;}</style><style data-emotion="css" data-s="">.css-8qhd7l-MuiModal-backdrop{z-index:-1;}</style><style data-emotion="css" data-s="">.css-4nmryk-MuiBackdrop-root-MuiModal-backdrop{position:fixed;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;right:0;bottom:0;top:0;left:0;background-color:rgba(0, 0, 0, 0.5);-webkit-tap-highlight-color:transparent;z-index:-1;}</style><style data-emotion="css" data-s="">.css-52g2y5-MuiDrawer-paper{overflow-y:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;z-index:1200;-webkit-overflow-scrolling:touch;position:fixed;top:0;outline:0;left:0;}</style><style data-emotion="css" data-s="">.css-cyqh1t-MuiPaper-root-MuiDrawer-paper{background-color:#fff;color:rgba(0, 0, 0, 0.87);-webkit-transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;box-shadow:var(--Paper-shadow);background-image:var(--Paper-overlay);overflow-y:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;z-index:1200;-webkit-overflow-scrolling:touch;position:fixed;top:0;outline:0;left:0;}</style><style data-emotion="css" data-s="">.css-b7dj7n-MuiList-root{list-style:none;margin:0;padding:0;position:relative;padding-top:8px;padding-bottom:8px;}</style><style data-emotion="css" data-s="">.css-z2qibm-MuiListItem-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;-webkit-text-decoration:none;text-decoration:none;width:100%;box-sizing:border-box;text-align:left;padding-top:8px;padding-bottom:8px;padding-left:16px;padding-right:16px;-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;}</style><style data-emotion="css" data-s="">.css-z2qibm-MuiListItem-root:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-z2qibm-MuiListItem-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-cfq8qh-MuiListItemText-root{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;margin-top:4px;margin-bottom:4px;}</style><style data-emotion="css" data-s="">.MuiTypography-root:where(.css-cfq8qh-MuiListItemText-root .MuiListItemText-primary){display:block;}</style><style data-emotion="css" data-s="">.MuiTypography-root:where(.css-cfq8qh-MuiListItemText-root .MuiListItemText-secondary){display:block;}</style><style data-emotion="css" data-s="">.css-j24td7-MuiTypography-root{margin:0;font-size:1rem;font-family:Roboto,sans-serif;font-weight:400;line-height:1.5;}</style></head>
+  <body style="padding-right: 15px; overflow: hidden;">
+    <div id="root" aria-hidden="true"><header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-cu7mkj-MuiPaper-root-MuiAppBar-root" style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12); padding-right: 15px;"><div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular makeStyles-toolbar-3 css-1ygil4i-MuiToolbar-root"><h6 class="MuiTypography-root MuiTypography-h6 makeStyles-title-1 css-y06khk-MuiTypography-root">Sistema de Inventario LGC</h6><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-3fjpmz-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path></svg><span class="MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"></span></button></div></header><div class="content"><div class="ventas-container"><h2>Realizar Venta</h2><form><div><label>Nombre del Producto:</label><input type="text" required="" value=""></div><div><label>Cantidad a Vender:</label><input type="number" required="" value=""></div><button type="submit">Vender Producto</button></form></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+<div role="presentation" class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-modal MuiModal-root css-2soe65-MuiModal-root-MuiDrawer-root"><div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-4nmryk-MuiBackdrop-root-MuiModal-backdrop" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div><div tabindex="0" data-testid="sentinelStart"></div><div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-cyqh1t-MuiPaper-root-MuiDrawer-paper" tabindex="-1" style="--Paper-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12); transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1);"><div><ul class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Categoria" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Categoria</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Principal" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Principal</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Ventas" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Ventas</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Profile" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Profile</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Historial" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Historial</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Inventario" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Inventario</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Usuarios" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Usuarios</span></div></a><a class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root" href="/Alertas" data-discover="true"><div class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"><span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-j24td7-MuiTypography-root">Alertas</span></div></a></ul></div></div><div tabindex="0" data-testid="sentinelEnd"></div></div></body></html>

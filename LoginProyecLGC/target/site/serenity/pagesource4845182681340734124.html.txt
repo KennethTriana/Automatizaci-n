@@ -1,0 +1,267 @@
+<html lang="en"><head><meta name="emotion-insertion-point" content="">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh"
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoservicio
+    </title>
+  <style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/App.css">
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  overflow-x: auto;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Home.css">
+.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #01c90b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #009107;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Principal.css">.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Registro.css">
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/historial.css">.historial-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.historial-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+}
+
+.historial-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historial-table th,
+.historial-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.historial-table th {
+  background-color: #343a40;
+  color: white;
+}
+
+.historial-table tr:hover {
+  background-color: #f1f3f5;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ASUS VIVOBOOK/OneDrive - SENA/Documentos/Frontend Proyecto/crud-institucion/src/pages/Login.css">
+.page-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #81C784;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #66BB6A;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.makeStyles-title-1 {
+  flex-grow: 1;
+}
+.makeStyles-link-2 {
+  color: white;
+  margin: 16px;
+  text-decoration: none;
+}
+.makeStyles-toolbar-3 {
+  display: flex;
+  justify-content: space-between;
+}
+</style><style data-emotion="css" data-s="">.css-1umw9bq-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;fill:currentColor;font-size:1.5rem;}</style><style data-emotion="css" data-s="">.css-5f8zx5-MuiAppBar-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;box-sizing:border-box;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;position:fixed;z-index:1100;top:0;left:auto;right:0;--AppBar-background:#00008B;--AppBar-color:#fff;background-color:var(--AppBar-background);color:var(--AppBar-color);}</style><style data-emotion="css" data-s="">@media print{.css-5f8zx5-MuiAppBar-root{position:absolute;}}</style><style data-emotion="css" data-s="">.css-cu7mkj-MuiPaper-root-MuiAppBar-root{background-color:#fff;color:rgba(0, 0, 0, 0.87);-webkit-transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;box-shadow:var(--Paper-shadow);background-image:var(--Paper-overlay);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:100%;box-sizing:border-box;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;position:fixed;z-index:1100;top:0;left:auto;right:0;--AppBar-background:#00008B;--AppBar-color:#fff;background-color:var(--AppBar-background);color:var(--AppBar-color);}</style><style data-emotion="css" data-s="">@media print{.css-cu7mkj-MuiPaper-root-MuiAppBar-root{position:absolute;}}</style><style data-emotion="css" data-s="">.css-1ygil4i-MuiToolbar-root{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:16px;padding-right:16px;min-height:56px;}</style><style data-emotion="css" data-s="">@media (min-width:600px){.css-1ygil4i-MuiToolbar-root{padding-left:24px;padding-right:24px;}}</style><style data-emotion="css" data-s="">@media (min-width:0px){@media (orientation: landscape){.css-1ygil4i-MuiToolbar-root{min-height:48px;}}}</style><style data-emotion="css" data-s="">@media (min-width:600px){.css-1ygil4i-MuiToolbar-root{min-height:64px;}}</style><style data-emotion="css" data-s="">.css-y06khk-MuiTypography-root{margin:0;font-family:Roboto,sans-serif;font-weight:500;font-size:1.25rem;line-height:1.6;}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root{text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:-12px;color:inherit;}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-1tyix74-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-1tyix74-MuiIconButton-root.MuiIconButton-loading{color:transparent;}</style><style data-emotion="css" data-s="">@media (min-width:0px){.css-1tyix74-MuiIconButton-root{display:none;}}</style><style data-emotion="css" data-s="">@media (min-width:960px){.css-1tyix74-MuiIconButton-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;text-align:center;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;font-size:1.5rem;padding:8px;border-radius:50%;color:rgba(0, 0, 0, 0.54);-webkit-transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;--IconButton-hoverBg:rgba(0, 0, 0, 0.04);margin-left:-12px;color:inherit;}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner{border-style:none;}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{pointer-events:none;cursor:default;}</style><style data-emotion="css" data-s="">@media print{.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{-webkit-print-color-adjust:exact;color-adjust:exact;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root:hover{background-color:var(--IconButton-hoverBg);}</style><style data-emotion="css" data-s="">@media (hover: none){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root:hover{background-color:transparent;}}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.Mui-disabled{background-color:transparent;color:rgba(0, 0, 0, 0.26);}</style><style data-emotion="css" data-s="">.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root.MuiIconButton-loading{color:transparent;}</style><style data-emotion="css" data-s="">@media (min-width:0px){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:none;}}</style><style data-emotion="css" data-s="">@media (min-width:960px){.css-3fjpmz-MuiButtonBase-root-MuiIconButton-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><style data-emotion="css" data-s="">.css-m24e0b-MuiDrawer-root{z-index:1200;}</style></head>
+  <body>
+    <div id="root"><header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-cu7mkj-MuiPaper-root-MuiAppBar-root" style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"><div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular makeStyles-toolbar-3 css-1ygil4i-MuiToolbar-root"><h6 class="MuiTypography-root MuiTypography-h6 makeStyles-title-1 css-y06khk-MuiTypography-root">Sistema de Inventario LGC</h6><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-3fjpmz-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="menu"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path></svg></button></div></header><div class="content"><div class="container"><div><h1>Perfil</h1><p>Foto Perfil:</p><img src="https://images.hdqwalls.com/download/maluma-monochrome-5k-9y-2048x1152.jpg" alt="Avatar" style="width: 200px; height: 200px; object-fit: cover;"><p>Nombres: Kenneth Jhoan</p><p>Apellidos: Triana Gonzalez</p><p>Correo: kennethtriana3@gmail.com</p><p>Teléfono: 3153183919</p><p>Dirección: Cll 67 norte #89-08</p><p>Cargo: 1</p></div><nav><button>Cerrar sesión</button></nav></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+</body></html>
